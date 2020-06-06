@@ -106,3 +106,55 @@ VALUES('AR' , 'Argentitna'),
 	 ('VE' , 'Venezuela');
 
 
+--Poblado de la TABLA Producto
+INSERT INTO FROM Producto (nombre,presentacion,precio,idDescuento,idImpuesto)
+VALUES('Nike MX-720-818           ',    ' Estilo retro casual y comodidad                        ', 2000 , 1 , 1),
+      ('Nike Vista Lite           ',    ' Comodidad al caminar                                   ', 2500 , 1 , 1),
+      ('Nike Air Vapormax 360     ',    ' Air Max 360 con las Vapormax.                          ', 3000 , 1 , 1),
+      ('Nike Air Max Verona       ',    ' Air Max  exclusiva para mujeres.                       ', 2800 , 1 , 1),
+      ('Mocasín Urbano Flexi      ',    ' Mocasin Casual Color Cafe                              ', 1000 , 1 , 4),
+      ('Sneaker Casual Sport      ',    ' Confort y comodidad                                    ', 850  , 2 , 1),
+      ('Nike Daybreak             ',    ' Nike Daybreak                                          ', 1700 , 1 , 1),
+      ('Nike Air Max Uptempo      ',    ' Amortiguación y comodidad                              ', 2350 , 3 , 1),
+      ('Nike Air Max 97           ',    ' Comfort espacio y comodidad                            ', 1500 , 2 , 3),
+      ('Nike Ghostswift           ',    ' Dimension Six, versiones rupturistas                   ', 2400 , 3 , 1),
+      ('Nike Vista Lite           ',    ' Ideal para correr                                      ', 2800 , 5 , 3),
+      ('Nike Air Max Verona       ',    ' Unas zapatillas solo para mujeres, confort y comodidad ', 3500 , 4 , 4),
+      ('Nike Signal D/MS/X        ',    ' D/MS/X, conexión entre pasado y futuro.                ', 4000 , 3 , 4),
+      ('Flexi 50805               ',    ' Flexi 50805 - Botín Casual para Hombre                 ', 999  , 2 , 3),
+      ('Flexi MXJER3              ',    ' Flexi Jeremy Choclo Liso Semi Vestir para Hombre       ', 1200 , 1 , 3),
+      ('Flexi Soho 68612          ',    ' Flexi Soho 68612 Mocasines para Hombre COLOR NEGRO     ', 3200 , 3 , 1),
+      ('Flexi Loreta MKJ-34       ',    ' Flexi Loreta Zapato Deportivo para Mujer               ', 2000 , 2 , 1),
+      ('Flexi Lory 102901         ',    ' Flexi Lory 102901 Negro Sandalias con Plataforma       ', 600  , 1 , 3),
+      ('Flexi ENYA                ',    ' Flexi ENYA 32603 Mocasines para Mujer                  ', 450  , 2 , 1),
+      ('Flexi Hill 402802         ',    ' Flexi Hill 402802 OPORTO Mocasines para Hombre         ', 840  , 1 , 1),
+      ('Flexi Miroslava 25909     ',    ' Flexi Miroslava 25909 Botas para Mujer                 ', 560  , 3 , 1),
+      ('Adidas Advantage -        ',    ' F99256 Adidas - VS Advantage -                         ', 1000 , 3 , 1),
+      ('Adidas Lite- F36661       ',    ' Adidas Lite Racer Adapt - F36661, Tenis Hombre         ', 850  , 1 , 1),
+      ('Adidas Lite Racer  - F3666',    ' Adidas Lite Racer Adapt - F36661, Tenis Hombre Negro   ', 1650 , 3 , 1),
+      ('Converse Mod: M9696C      ',    ' Converse Tenis para Hombre, color Rojo, 28             ', 1230 , 3 , 1);
+
+
+
+
+--Poblado de la TABLA Factura
+
+INSERT INTO Factura(idCliente,idProducto,cantidad, total, fechaCompra)
+VALUES(2 , 2 , 1 , NULL , '2020-04-05'),
+      (4 , 32, 2 , NULL , '2020-06-05'),
+      (3 , 25, 2 , NULL , '2020-03-05'),
+      (6 , 20, 1 , NULL , '2020-05-27'),
+      (10, 19, 1 , NULL , '2020-06-05'),
+      (22, 17, 2 , NULL , '2020-06-02'),
+      (21, 23, 1 , NULL , '2020-06-01'),
+      (14, 4 , 4 , NULL , '2020-05-05'),
+      (8 , 10, 12, NULL , '2020-04-05'),
+      (5 , 29, 6 , NULL , '2020-06-05'),
+      (14, 21, 2 , NULL , '2020-06-05'),
+      (1 , 23, 3 , NULL , '2020-05-12'),
+      (4 , 14, 2 , NULL , '2020-06-05'),
+      (20, 9 , 2 , NULL , '2020-06-01'),
+      (5 , 26, 1 , NULL , '2020-06-05'),
+      (5 , 7 , 1 , NULL , '2020-06-05'),
+      (6 , 20, 1 , NULL , '2020-06-05'),
+      (15, 18, 2 , NULL , '2020-06-05');
