@@ -1,0 +1,108 @@
+--Poblado de la TABLA CLIENTE
+INSERT INTO Cliente (nombre,apellido,idPais,idIdentificacion,noDocumento)
+VALUES('Florencia       ','Cazar Martinez   ','MX',2,'123097UY4532908'),
+	 ('Noel            ','Martinez Alcozer ','MX',2,'0987653RT127689'),
+	 ('Mario           ','Morgan Cutiño    ','MX',2,'9876543294VCBH'),
+	 ('Maria Concepción','Ibarra Duran     ','MX',2,'09856432187965E'),
+	 ('Fernando        ','Iñarritu Rojas   ','MX',2,'98J7424218796JH'),
+	 ('Alfonso         ','Videgaray Nieto  ','MX',2,'987654R32109J87'),
+	 ('Alonso          ','López López      ','MX',2,'9876512T543908U'),
+	 ('Mónica          ','Bonilla Ospina   ','CO',1,'MOBCO123'),
+	 ('Ramona          ',' Pacheco         ','MX',1,'ROPMX789'),
+	 ('Belem           ','Molina Ortiz     ','UY',1,'BMUY9876'),
+	 ('Abraham         ','Gutierrez Sanchez','EC',3,'23238984UIWE'),
+	 ('Monserrat       ','Alcantara Alfaro ','MX',2,'98T5634218796JH'),
+	 ('Ariadna         ','Machuca Cortes   ','BR',1,'AMABR987'),
+	 ('Jazmin          ','Aquino Gutierrez ','CO',1,'JAQCO895'),
+	 ('Eliza           ','Duran Duran      ','BR',1,'EDUBR786'),
+	 ('Marycarmen      ','Molina Gutierrez ','PA',1,'MMOVZ175'),
+	 ('Gloria          ','Correa Trujillo  ','PA',1,'GCOPA278'),
+	 ('Thalia          ','Lozada Trujillo  ','EC',1,'TLOEC897'),
+	 ('Armando         ','López            ','CO',1,'Q12875ER098432Y'),
+	 ('Luis            ','Usan             ','EC',1,'Q128734R095932Y');
+
+
+
+--Poblado de la TABLA DESCUENTO
+INSERT INTO Descuento (tipo,valor)
+VALUES('SIN DESCUENTO 0%' ,0.00),
+	 ('50% DESCUENTO',0.50),
+      ('15% DESCUENTO',0.15),
+      ('NAVIDAD 75%',0.75),
+      ('5% DESCUENTO',0.05);
+
+
+--Poblado de la TABLA IDENTIFICACION
+INSERT INTO Identificacion (tipo)
+VALUES ('PASAPORTE'),
+	  ('INE'),
+	  ('DNI'),
+	  ('CARTILLA MILITAR'),
+	  ('CURP');
+
+--Poblado de la TABLA IMPUESTO
+INSERT INTO Impuesto (descripcion, abreviacion, valor)
+VALUES('Impuesto al Valor Agregado','IVA',0.08),
+	 ('IMPUESTO ESPECIAL SOBRE PRODUCCIÓN Y SERVICIOS','IEFT',0.03),
+      ('Impuesto General a las Ventas','IGV',0.04);
+
+
+--Poblado de la TABLA 'INVENTARIO
+
+INSERT INTO Inventario (idProducto,idMovimiento,cantidad,fecha)
+VALUES(1 , 1,  1000 , '2020-02-05 00:00:00.000'),
+	 (2 , 1,  400  , '2020-03-20 00:00:00.000'),
+	 (3 , 1,  200  , '2020-05-05 00:00:00.000'),
+	 (4 , 1,  100  , '2020-04-05 00:00:00.000'),
+	 (5 , 1,  50   , '2020-01-05 00:00:00.000'),
+	 (6 , 1,  100  , '2020-03-21 00:00:00.000'),
+	 (7 , 1,  100  , '2020-05-05 00:00:00.000'),
+	 (9 , 1,  20   , '2020-03-11 00:00:00.000'),
+	 (10, 1,  30   , '2020-05-23 00:00:00.000'),
+	 (11, 1,  10   , '2020-06-05 00:00:00.000'),
+	 (13, 1,  50   , '2020-03-05 00:00:00.000'),
+	 (14, 1,  300  , '2020-04-05 00:00:00.000'),
+	 (17, 1,  110  , '2020-06-01 00:00:00.000'),
+	 (18, 1,  120  , '2020-05-05 00:00:00.000'),
+	 (19, 1,  90   , '2020-03-20 00:00:00.000'),
+	 (20, 1,  80   , '2020-01-05 00:00:00.000'),
+	 (21, 1,  123  , '2020-06-05 00:00:00.000'),
+	 (22, 1,  150  , '2020-02-05 00:00:00.000'),
+	 (23, 1,  120  , '2020-06-05 00:00:00.000'),
+	 (24, 1,  90   , '2020-03-15 00:00:00.000'),
+	 (25, 1,  40   , '2020-04-07 00:00:00.000'),
+	 (26, 1,  25   , '2020-05-09 00:00:00.000'),
+	 (29, 1,  22   , '2020-02-25 00:00:00.000'),
+	 (31, 1,  30   , '2020-01-05 00:00:00.000'),
+	 (32, 1,  10   , '2020-02-23 00:00:00.000'),
+	 (33, 1,  90   , '2020-06-25 00:00:00.000'),
+	 (34, 1,  89   , '2020-03-05 00:00:00.000');
+
+
+
+--Poblado de la TABLA MOVIMIENTO
+INSERT INTO Movimiento (tipoMovimiento)
+VALUES('entrada'),
+      ('salida');
+
+
+--Poblado de la TABLA PAIS
+INSERT INTO Pais (idPais,pais)
+VALUES('AR' , 'Argentitna'),
+	 ('BR' , 'Brazil'),
+	 ('BZ' , 'Belice'),
+	 ('CL' , 'Chile'),
+	 ('CO' , 'Colombia'),
+	 ('CR' , 'Costa Rica'),
+	 ('EC' , 'Ecuador'),
+	 ('GT' , 'Guatemala'),
+	 ('GY' , 'Guyana'),
+	 ('MX' , 'México'),
+	 ('PA' , 'Panamá'),
+	 ('PE' , 'Perú'),
+	 ('PY' , 'Paraguay'),
+	 ('SR' , 'Surinam'),
+	 ('UY' , 'Uruguay'),
+	 ('VE' , 'Venezuela');
+
+
