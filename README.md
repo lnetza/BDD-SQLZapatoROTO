@@ -1,3 +1,3 @@
 # BDD-SQLZapatoROTO
  
-(img/ModeloEntidadRelacion.jpg)
+![](img/ModeloEntidadRelacion.jpg)
